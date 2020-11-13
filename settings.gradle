@@ -1,0 +1,7 @@
+include ':client'
+include ':testTwo'
+include ':api'
+include ':testOne'
+include ':Service'
+include ':app'
+rootProject.name = "ServiceProvider"
