@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.setText(getMsg(count));
+                tv.setText(getMsg(count++));
             }
         });
     }
