@@ -25,6 +25,11 @@ public class ServiceManager {
         }
     }
 
+
+    public static Map<Object, ServiceCreator> getServiceClassMap() {
+        return SERVICE_CLASS_MAP;
+    }
+
     private static String transformClassKey(Class c) {
         return c.getName();
     }
@@ -62,7 +67,7 @@ public class ServiceManager {
         checkNotNull(serviceKey, constructAgs);
         ServiceCreator serviceCreator = SERVICE_CLASS_MAP.get(serviceKey);
         if (serviceCreator == null) {
-            throw new IllegalArgumentException("the service" + serviceKey + "doesn't register." +
+            throw new IllegalArgumentException("the service" + serviceKey + " doesn't register." +
                     "you can call ServiceManager add() before use a service");
         }
 

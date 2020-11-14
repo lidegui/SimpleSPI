@@ -10,6 +10,6 @@ import com.ldg.serviceprovider.ServiceDeclare;
 public class ApiOneImpl implements ApiOne {
     @Override
     public String getMsg() {
-        return "消息One";
+        return "消息One（我不是单例）";
     }
 }

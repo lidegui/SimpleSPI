@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
  * created by gui 2020/11/13
  */
 @Documented
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 @Target(ElementType.TYPE)
 public @interface ServiceDeclare {
     Class provider();

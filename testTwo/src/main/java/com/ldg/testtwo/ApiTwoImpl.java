@@ -14,6 +14,6 @@ public class ApiTwoImpl implements ApiTwo {
     @Override
     public String getMsg() {
         count++;
-        return "消息Two" + count;
+        return "消息Two（我是单例）" + count;
     }
 }

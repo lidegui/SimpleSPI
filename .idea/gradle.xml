@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -15,6 +16,7 @@
             <option value="$PROJECT_DIR$/api" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/plugin" />
             <option value="$PROJECT_DIR$/testOne" />
             <option value="$PROJECT_DIR$/testTwo" />
           </set>
