@@ -1,5 +1,6 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
+//apply plugin: 'com.novoda.bintray-release'
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -16,3 +17,13 @@ uploadArchives {
         pom.version = '1.0.0'
     }
 }
+
+//publish {
+//    userOrg = 'tuwa' //bintray账户下某个组织id
+//    repoName= 'maven'
+//    groupId = 'com.ldg.serviceprovider' //maven仓库下库的包名，一般为模块包名
+//    artifactId = 'plugin-inject' //项目名称
+//    publishVersion = '1.0.0' //版本号
+//    desc = 'spi' //项目介绍，可以不写
+//    website = 'https://github.com/CrazyGuizi/SimpleSPI' //项目主页，可以不写
+//}

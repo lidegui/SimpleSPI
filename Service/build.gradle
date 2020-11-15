@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.github.panpf.bintray-publish'
 
 android {
     compileSdkVersion 30
@@ -10,7 +12,6 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -25,8 +26,13 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
 }
+
+//publish {
+//    userOrg = 'tuwa' //bintray账户下某个组织id
+//    groupId = 'com.ldg.serviceprovider' //maven仓库下库的包名，一般为模块包名
+//    artifactId = 'service' //项目名称
+//    publishVersion = '1.0.0' //版本号
+//    desc = 'service provider interface' //项目介绍，可以不写
+//    website = 'https://github.com/CrazyGuizi/SimpleSPI' //项目主页，可以不写
+//}

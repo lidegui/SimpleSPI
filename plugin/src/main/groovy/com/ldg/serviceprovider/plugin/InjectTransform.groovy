@@ -66,16 +66,13 @@ public class InjectTransform extends Transform {
                         if (isIncremental) {
                             switch (jarInput.status) {
                                 case Status.REMOVED:
-                                    log("remove")
                                     FileUtils.forceDeleteOnExit(srcFile)
                                     break
                                 case Status.CHANGED:
                                 case Status.ADDED:
-                                    log("CHANGED")
                                     transformJar(srcFile, destFile)
                                     break
                                 case Status.NOTCHANGED:
-                                    log("nochange")
                                     break
                             }
                         } else {
