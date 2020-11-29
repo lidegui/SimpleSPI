@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.ldg.api.ApiOne;
 import com.ldg.api.ApiTwo;
+import com.ldg.api.KotlinApi;
 import com.ldg.serviceprovider.ServiceManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         return "第" + count + "次点击结果：" +
                 "\n" +
                 "moduleOne:" + ServiceManager.get(ApiOne.class).getMsg()
+                +
+                "Kotlin:" + ServiceManager.get(KotlinApi.class).getString()
                 + "\n"
                 + "moduleTwo:" + ServiceManager.get(ApiTwo.class).getMsg();
     }
